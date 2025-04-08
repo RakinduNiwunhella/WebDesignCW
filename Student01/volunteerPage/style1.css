@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+main{
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #f8f8f8;
+
+  }
+
+.container {
+    max-width: auto;
+    margin: auto;
+    background: rgba(231, 231, 231, 0.158);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.programs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+.program-card {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.countryCircle {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between flag and text */
+    padding: 10px;
+    position: relative; /* For absolute positioning of the heart button */
+}
+
+.circle-image-container {
+    width: 30px;  /* Really small size */
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #8b8a8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.countryText {
+    font-size: 14px; /* Slightly smaller text for balance */
+    color: #333;
+    margin: 0;
+}
+
+/* Heart button styles */
+.heart-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.heart-btn::before {
+    content: "♥";
+    font-size: 20px;
+    color: #ddd; /* Default heart color */
+    transition: color 0.3s ease;
+}
+
+.heart-btn.liked::before {
+    color: red; /* Color when liked */
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.button:hover {
+    background: #218838;
+}
+
+.buttonB {
+    background: #1a45e2;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.buttonB:hover {
+    background: #1337b9;
+}
+.durations_volunteer{
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between flag and text */
+    position: relative; /* For absolute positioning of the heart button */
+}
+.icon{
+    width: 25px;  /* Really small size */
+    height: 25px;
+    padding: 2px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.iconText {
+    font-size: 14px; /* Slightly smaller text for balance */
+    color: #333;
+    margin: 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    gap: 5px;
+    margin: 5px;
+}
+.card{
+    text-align: center;
+    width: 30%;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 12px;
+    
+}
+.card-images{
+    width: 60px;  
+    height: 60px;
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.card-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.program-content {
+    width: auto;
+}
+table {
+    width: 98%;
+    margin-left: 4px;
+    border-collapse:separate;
+    border-spacing: 0;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #1e2a38;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.description{
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+}
+.feedback {
+    margin-top: 20px;
+}
+
+.feedback textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.rating-emojis {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.rating span {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.rating span:hover {
+    transform: scale(1.2);
+}
+.reviews-container{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ratings{
+    width: 30%;
+}
+.right-section{
+    left: 70%;
+}
+.reviews {
+    margin-top: 20px;
+}
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+.review-author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.review-date {
+    color: gray;
+    font-size: 12px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+
+
+video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover entire container */
+}
+.video-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.2); /* Change color and opacity as needed */
+z-index: 1;
+}
+.bottomOverlay {
+position: absolute;
+top: 70%;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 2;     /* Ensure the overlay sits above the video */
+color: #000000;    /* Text color; white works well on darker backgrounds */
+font-family: Arial, sans-serif;
+/* Optional: add a background for better readability */
+background: rgba(86, 85, 85, 0.25);
+padding: 10px;
+border-radius: 5px;
+}
+.bottomOverlayText{
+    position: absolute;
+    left: 10%;
+    width: 50%; 
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.2px rgb(1, 1, 1);
+}
+.volunteer-now-btn {
+    position: absolute;
+    right: 10%;  /* 15% from the right side of the parent container */
+    top: 20%;  /* 20% from the bottom of the parent container */
+    padding: 20px 40px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50px; 
+    text-align: center;
+    transition: background-color 0.3s;
+    display: block;
+        }
+
+.volunteer-now-btn:hover {
+    background-color: #444;
+}
+.why-volunteer{
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 60%;
+    padding: 20px 40px;
+    font-size: 25px;
+}
+.why-volunteer-us-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.why-volunteer-us-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.why-volunteer-us-intro{
+    width: 65%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 65%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+}
+.why-volunteer-us-benifits{
+    font-size: 23px;
+    width: 65%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 65%;
+    background: rgba(255, 255, 255, 0.6);
+
+}
+.why-volunteer-us-benifits dt {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.why-volunteer-us-benifits dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+
+}

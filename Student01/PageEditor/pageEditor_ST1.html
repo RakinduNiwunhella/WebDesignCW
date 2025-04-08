@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Rakindu Niwunhella</title>
+    <link rel="stylesheet" href="styleglobal.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+
+    
+</head>
+<body>
+    <!-- Wrapper to center content -->
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>        
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Climate Action Logo" width="120">
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../../student-02/home.html">Home</a></li>
+                    <li><a href="../../student-01/volunteerPage/volunteer.html">Volunteer</a></li>
+                    <li><a href="../../student-02/table.html">Climate Data</a></li>
+                    <li><a href="../../student-04/profile.html">User Profile</a></li>
+                    <li><a href="../../student-03/Feedback.html">Feedback</a></li>
+                    <li><a href="../../student-03/Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <body>
+    
+            
+                <section class="stud">
+                    <h2>Rakindu Niwunhella - Student 01</h2>
+                </section>
+            
+                <div class="container">
+                    <!-- Main content area -->
+                    <main>
+                        
+                        <section>
+                            <h2 id="splash">Splash Page</h2>
+                                <h3>Technical Description</h3>
+                                <p>In this website, I divided the page into two parts using div tags, with the left side occupying 30% and the
+                                     right side 70% of the space. On the right side, I embedded a looping video using video tags set to 
+                                     <b>autoplay</b>, <b>loop</b>, and <b>muted</b>, while on the left side, I placed the logo using an image 
+                                     tag and aligned it with <b>position: absolute</b> and a z-index of 1, positioned with <b>top</b> and
+                                      <b>left</b>. Below this, I included the mission statement within a div, and at the bottom, I positioned
+                                       the team members’ teddies using <b>position: absolute</b>. Additionally, I implemented a button to navigate 
+                                       to the home screen, styled with <b>background-color: rgb(0, 160, 24)</b>, rounded borders via <b>border-radius:
+                                         20px</b>, and padded with <b>padding: 10px 20px</b>. The button’s opacity changes on hover and when active,
+                                          achieved with the CSS rules <b>.getStartedButton:hover{opacity: 0.7;}</b> and <b>.getStartedButton:active{opacity: 0.4;}</b>.</p>
+                                <br>
+                                <h3>Accessibility</h3>
+                                    <p>On this webpage, I have divided it into two distinct sections. The right side features a captivating 
+                                        video of a landscaped loop, while the left side prominently displays our logo along with our mission 
+                                        statement. At the bottom, I have included a team member’s details. In the centre, I have placed a button
+                                         that leads to the home page. To enhance user experience, I have incorporated several design elements. 
+                                         When the user hovers over the button and clicks it, the button will change its colours. </p>
+                                
+                                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                                    <p><a href="../validationPage/validation_ST1.html#splashVal">Validation Page - Splash Screen</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            
+                                <h3>Link to the page</h3>
+                                    <p><a href="../../student-01/Splash Screen/splash.html">Splash Screen</a></p>
+                        </section>
+            
+                        <section>
+                            <h2 id="volunteer">Volunteer Page</h2>
+                                <h3>Technical Description</h3>
+                                <p>On this webpage, I divided the content into several sections using div elements. In the first section, I featured
+                                     a looping video with text and links overlaid on top. I accomplished this by applying CSS properties such 
+                                     as <b>position: relative</b> and <b>overflow: hidden</b>, while the video plays automatically, loops, and remains
+                                      muted. A semi-transparent black overlay improves text visibility by using <b>position: absolute</b>, full width
+                                       and height, and a background color of <b>rgba(0, 0, 0, 0.2)</b>. Additionally, I overlaid a darker plane at the
+                                        bottom that includes text and a button which scrolls to the relevant section. The button changes color on hover
+                                         using the <b>:hover</b> selector and has rounded edges with <b>border-radius</b>.
+                                    <br><br>
+                                    The next section focuses on why people should volunteer. It features a background image set in a div with
+                                     <b>width: auto</b>, <b>height: 100%</b>, and <b>position: absolute</b>. Over this image, I added a 
+                                     semi-transparent white overlay by using another div that takes up 65% of the width and adjusts automatically 
+                                     to different screen sizes, with the background color set to <b>rgba(255, 255, 255, 0.6)</b>. The overlay's text
+                                      is centered using <b>text-align: center</b> and <b>position: relative</b>, styled with a font size of 
+                                      <b>23px</b> and margins on both sides for spacing.
+                                    <br><br>
+                                    In the following section, I added a sort-by button using select and option tags. This button is positioned in the
+                                     top-right corner with <b>top: 20px</b> and <b>right: 20px</b>, styled with <b>padding: 6px 12px</b> and a
+                                      <b>cursor: pointer</b> to indicate interactivity. On the left side, there is text showing the number of 
+                                      available volunteer programs along with a "View All" link. Below these elements, I created four program cards 
+                                      using div elements with the same class. Each card features images with a hover effect that slightly enlarges 
+                                      the card using the CSS rule <b>.program-card:hover { transform: scale(1.05); }</b>. Inside each card, there are
+                                       two buttons labeled "View Project" and "Apply," as well as a like button that toggles to red when clicked,
+                                        achieved using a JavaScript function that toggles a "liked" class.
+                                    <br><br>
+                                    For the final section, I created a review area divided into two parts using div elements. The left side occupies
+                                     30% of the width while the right side takes up 70%, ensuring a consistent layout across devices. The right side
+                                      contains two sample review boxes, and at the bottom, a text box is provided for users to type and submit their
+                                       reviews. This text box is implemented using a textarea element with a placeholder that reads "Write your review here…".</p>        
+                               <br>
+                                       <h3>Accessibility</h3>
+                                <p>
+                                    The webpage begins with a looping video of volunteers planting trees. Over this video, a black transparent 
+                                    overlay contains interactive navigation links. When the "Volunteer Now" button is clicked, it scrolls down
+                                     to the Volunteer Programs section. Clicking the "Why Volunteer Us" link navigates to a section explaining 
+                                     the reasons and benefits of volunteering. The "Reviews" link takes users to the Reviews section, while the 
+                                     "Team" button redirects to the Teams page, which is developed by Student 3.  <br><br>
+                                    Next, the “Start Volunteering” section highlights why people should volunteer and what they gain from it.
+                                     This section is divided into two parts using div tags. On the left side, a white transparent background div 
+                                     ensures readability. A similar transparent styling is applied to the video and navigation links to enhance clarity.  
+                                    <br><br>
+                                    The “Start Volunteering ” section showcases four different volunteering programs, each represented by a card. 
+                                    These cards are structured using div tags for proper organisation. A navigation panel in the left corner provides 
+                                    three sorting options when clicked. Each program card is interactive—hovering over a card enlarges it for better 
+                                    readability and engagement. The "View Project" and "Apply" buttons are also interactive, making it easier for users
+                                     to explore and apply for programs.  
+                                    <br><br>
+                                    Finally, the “Reviews section” presents feedback from previous volunteers. On the left, it displays the total
+                                     number of reviews, while on the right, two example reviews provide insights into volunteer experiences. Below
+                                      these reviews, a feedback form allows users to submit their opinions, featuring  "Submit Feedback" and "Cancel"
+                                       buttons for user convenience.</p>
+            
+                                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                                    <p><a href="../../student-01/validationPage/validation_ST1.html#volunteerVal">Validation Page - Volunteer Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            
+                                <h3>Link to the page</h3>
+                                    <p><a href="../../student-01/volunteerPage/volunteer.html">Volunteer Page</a></p>
+                        </section>
+            
+                        <section>
+                            <h2 id="content">Content Page</h2>
+                                <h3>Technical Description</h3>
+                                <p>On this webpage, I set a fixed width of <b>1200px</b> for aesthetic purposes to create a balanced layout,
+                                     then incorporated several images that were formatted using CSS properties such as <b>width</b> and
+                                     <b>margin</b> to ensure proper spacing and alignment, while structuring the content with <b>p</b> tags 
+                                     and <b>div</b> elements for a clean, professional design.</p>            
+                                <br>
+                                     <h3>Accessibility</h3>
+                                    <p>In this webpage, I discuss the impact of <b>climate change</b> on <b>biodiversity</b>.
+                                         I begin with a photo that highlights the differences between a desert and a forest, 
+                                         setting the visual context for the topic. A following paragraph provides a basic introduction
+                                          that outlines how <b>climate changes</b> influence various ecosystems, which leads into an 
+                                          examination of the <b>effects on species diversity</b> and the resulting <b>impact on habitat 
+                                            integrity</b>. The discussion then addresses the broader <b>consequences on ecological
+                                                 services</b> and emphasizes the role of <b>international cooperation</b>, supported
+                                                  by illustrative <b>case studies</b>, before concluding with a comprehensive summary
+                                                   of the findings.</p>
+                                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                                    <p><a href="../../student-01/validationPage/validation_ST1.html#contentVal">Validation Page - Content Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            
+                                    
+                                <h3>Link to the page</h3>
+                                    <p><a href="../contentPage/content_ST1.html">Content Page - The Impact of Climate Change on Biodiversity</a></p>
+                        </section>
+            
+                        <section>
+                            <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                            <p>During this coursework, I encountered several challenges, such as learning how to
+                                 properly use div elements and position items using top, bottom, left, and right properties.
+                                  I also discovered the importance of using percentages instead of fixed pixels to maintain 
+                                  consistent layouts across different devices. Additionally, I learned how to effectively
+                                   implement video and image elements, set them as backgrounds, and loop videos. I also gained 
+                                   experience in linking and applying CSS files correctly, as well as using GitHub for version
+                                    control and team collaboration, among many other challenges that enriched my web development 
+                                    skills.</p>
+                        </section>
+            
+                        <section>
+                            <h2 id="compliance"> Compliance</h2>
+                            <p>In developing the webpages, I ensured compliance with Janet regulations by adopting best practices
+                                 in layout, accessibility, and code structure. I used semantic HTML elements such as divs and 
+                                 paragraphs to structure content logically and applied responsive design techniques—using 
+                                 percentage-based widths instead of fixed pixels—to guarantee consistent display across different 
+                                 devices. Multimedia elements like looping videos and background images are implemented with 
+                                 appropriate attributes (autoplay, loop, and muted) so that they enhance rather than distract 
+                                 from the user experience. Additionally, I used overlays to improve text contrast and readability,
+                                  meeting visual accessibility standards. By linking CSS files externally and using GitHub for
+                                   version control and collaboration, I maintained a clean, maintainable, and secure codebase.
+                                    These practices demonstrate my understanding and application of Janet regulations governing
+                                     web page publication in a realistic and effective manner.</p>
+                                
+                        </section>
+            
+                        <section>
+                            <h2 id="ref">References</h2>
+                                <ul class="ref">
+                                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com">https://www.istockphoto.com</a> </li>
+                                    <li>Freepik(2025) <i>FreePik</i> Available at: <a href="https://www.freepik.com">https://www.freepik.com</a> </li>
+                                    <li>pngtree(2025) <i>Pngtree</i> Available at: <a href="https://pngtree.com">https://pngtree.com</a> </li>
+                                    <li>W3School(2025) <i>w3school</i> Available at: <a href="https://www.w3schools.com">https://www.w3schools.com</a> </li>
+                                    <li>Youtube(2025) <i>youtube</i> Available at: <a href="https://www.youtube.com">https://www.youtube.com</a> </li>
+                                    <li>LinkedInLearing(2025) <i>Linkedin</i> Available at: <a href="https://www.linkedin.com/learning/?u=76664938">https://www.linkedin.com/learning/?u=76664938</a> </li>
+
+
+                                </ul>
+                        </section>
+            
+                        <p class="top"><a href="#top">Go top</a></p>
+                    </main>
+            
+                    <!-- Sidebar area -->
+                    <aside>
+                        <h3>Core pages developed:</h3>
+            
+                    <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                        <ul class="top-level-ul">
+                            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                            <li>Student 1</li>
+                                <ul> 
+                                    <li><a href="../../student-01/Splash Screen/splash.html">Splash page</a></li>
+                                    <li><a href="../../student-01/volunteerPage/volunteer.html">Volunteer page</a></li>
+                                    <li><a href="../contentPage/content_ST1.html">Content page</a></li>
+                                </ul>
+                            <li>Student 2</li>
+                                <ul>
+                                    <li><a href="../../student-02/home.html">Home page </a></li>
+                                    <li><a href="../../student-02/table.html">Table page</a></li>
+                                    <li><a href="../../content pages/Combating-Climate-Chang/content_ST2.html">Content page</a></li>
+                                </ul>
+                            <li>Student 3</li>
+                                <ul>
+                                    <li><a href="../../student-03/feedback.html">Feedback page</a> </li>
+                                    <li><a href="../../student-03/team.html">Team page</a></li>
+                                    <li><a href="../../content pages/RenewableEnergy/content_ST3.html">Content page</a></li>
+                                </ul>
+                            <li>Student 4</li>
+                                <ul>
+                                    <li><a href="../../student-04/profile.html">Profile page </a></li>
+                                    <li><a href="../../student-04/sitemap.html">Sitemap page</a></li>
+                                    <li><a href="../../content pages/Science-Behind-Climate-Change/content_ST4.html">Content page</a></li>
+                                </ul>
+                            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                            <li><a href="#compliance">Compliance</a></li>
+                            <li><a href="#ref">References</a></li>
+                        </ul>
+                    </aside>
+                </div>
+        
+            </body>        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>Take action today for a greener tomorrow 🌱</p>
+                <div class="editor-links">
+                    <a href="../../student-01/PageEditor/pageEditor_ST1.html">Page Editor: Student 1</a>
+                    <a href="../../student-02/PageEditor/pageEditor_ST2.html">Page Editor: Student 2</a>
+                    <a href="../../student-03/PageEditor/pageEditor_ST3.html">Page Editor: Student 3</a>
+                    <a href="../../student-04/PageEditor/pageEditor_ST4.html">Page Editor: Student 4</a>
+                </div>
+                <div class="editor-links">
+                    <a href="../../student-04/sitemap.html">Site Map</a>
+                </div>
+                <p>&copy; 2025 Climate Action. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
