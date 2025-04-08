@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Hub | Climate Data</title>
+    <link rel="stylesheet" href="styleglobal.css">
+
+    
+    <style>
+        /* Table Page Specific Styles */
+        .climate-table {
+            width: 100%;                               /* Full width of its container */
+            border-collapse: collapse;                 /* Remove spacing between cells */
+            margin: 2rem 0;                            /* Vertical margin around the table */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* Subtle shadow for depth */
+            background: white;
+            
+        }
+
+        /* Wrapper div that contains the table */
+        .table-wrapper {
+            width: 80%;       /* 80% width of the parent container */
+            margin: 0 auto;   /* Centers the wrapper horizontally */
+            overflow-x: auto; /* Adds horizontal scroll on small screens */
+        }
+
+        /* Ensure table fits within the wrapper */
+        .climate-table {
+            width: 100%; /* Fits within .table-wrapper */
+            max-width: 100%; /* Prevents table from exceeding the wrapper width */
+        }
+
+        /* Styles for all table header and cell content */
+        .climate-table th, .climate-table td {
+            padding: 1rem;                     /* Adds space inside cells */
+            text-align: left;                  /* Aligns text to the left */
+            border-bottom: 1px solid #ddd;    /* Light bottom border between rows */
+        }
+
+        /* Styles for the table header row */
+        .climate-table th {
+            background-color: var(--primary-green); /* Green background color for CSS variable */
+            color: white;
+        }
+
+        /* Alternating row color for better readability */
+        .climate-table tr:nth-child(even) {
+            background-color: #f9f9f9;    /* Light grey background for even rows */
+        }
+
+        /* Hover effect on table rows */
+        .climate-table tr:hover {
+            background-color: #E8F5E9;   /* Light green highlight on hover */
+        }
+
+        /* Styles for the flag images inside table cells */
+        .country-flag {
+            width: 30px;             /* Width of the flag image */
+            margin-right: 10px;      /* Space between flag and text */
+        }
+
+        /* Styles for the country name container */
+        .country-name {
+        white-space: nowrap; /* Prevents text from wrapping */
+        display: flex;       /* Aligns flag and text in a row */
+        align-items: center; /* Vertically centers flag and text */
+        gap: 10px;           /* Space between flag and country name */
+        }
+
+        /* Styles for clickable links under initiatives */
+        .initiative-link {
+            color: var(--primary-blue);  /* Blue text color for CSS variable */
+            text-decoration: none;       /* Removes underline */
+        }
+
+        /* Link hover effect */
+        .initiative-link:hover {
+            text-decoration: underline;   /* Underline link on hover */
+        }
+
+        /* Tooltip styling for table headers with titles */
+        th[title]:hover::after {
+            content: attr(title);  /* Displays the title attribute */
+            position: absolute;    /* Positions the tooltip relative to the page */
+            background: #333;    /* Dark background color */
+            color: white;        /* White text color */
+            padding: 5px;          /* Padding inside the tooltip */
+            border-radius: 3px;    /* Rounded corners */
+            margin-top: 20px;      /* Pushes tooltip below the header */
+            font-size: 0.8rem;     /* Smaller font size */
+        }
+
+        /* Responsive styles for screens below 768px wide */
+        @media (max-width: 768px) {
+            .climate-table {
+                display: block;    /* Makes the table behave like a block element */
+                overflow-x: auto;  /* Allows horizontal scrolling on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrapper to center content -->
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>        
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Climate Action Logo" width="120">
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../student-02/home.html">Home</a></li>
+                    <li><a href="../../WEB-CW/student-01/volunteerPage/volunteer.html">Volunteer</a></li>
+                    <li><a href="../student-02/table.html">Climate Data</a></li>
+                    <li><a href="../../WEB-CW/student-04/profile.html">User Profile</a></li>
+                    <li><a href="../../WEB-CW/student-03/Feedback.html">Feedback</a></li>
+                    <li><a href="../../WEB-CW/student-03/Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 style="text-align: center; margin: 2rem 0;">Global Climate Action Progress Metrics 2024</h1>
+            
+            <div class="table-wrapper">
+                <table class="climate-table">
+                    <caption>(Data Source: UNEP, IEA, and National Reports)</caption>
+
+                    <!-- Columns headers-->
+                    <thead>
+                        <tr>
+                            <th title="Country/Region">🌍 Country</th>
+                            <th title="CO₂ Emissions (Metric Tons/Year)">
+                                <i class="fas fa-smog"></i> CO₂ Emissions
+                            </th>
+                            <th title="Renewable Energy (%)">
+                                <i class="fas fa-solar-panel"></i> Renewable Energy (% of total energy)
+                            </th>
+                            <th title="Key Climate Initiatives">
+                                <i class="fas fa-seedling"></i> Key Initiatives
+                            </th>
+                            <th title="SDG 13 Alignment Status">Impact/Goal Alignment</th>
+                        </tr>
+                    </thead>
+
+                <!-- Rows for each country -->
+                <tbody>
+                    <!-- USA Data Row -->
+                    <tr>
+                        <td><img src="images/usN.svg" class="country-flag" alt="USA"> USA</td>
+                        <td>14.5</td>
+                        <td>22%</td>
+                        <td>
+                            <a href="https://www.democrats.senate.gov/imo/media/doc/inflation_reduction_act_of_2022.pdf" class="initiative-link">Inflation Reduction Act (IRA)</a>, 
+                        </td>
+                        <td>
+                            <a href="https://unfccc.int/sites/default/files/NDC/2022-06/United%2520States%2520NDC%2520April%252021%25202021%2520Final.pdf" class="initiative-link">On track for 2030 emissions cuts (-50% vs. 2005), but renewable transition needs acceleration.</a>
+                        </td>
+                    </tr>
+
+                    <!-- Germany Data Row -->
+                    <tr>
+                        <td><img src="images/de.svg" class="country-flag" alt="Germany"> Germany</td>
+                        <td>7.8</td>
+                        <td>46%</td>
+                        <td>
+                            <a href="https://www.bundesregierung.de/breg-en/news/amendment-of-the-renewables-act-2060448" class="initiative-link">Renewable Energy Expansion Act (EEG 2023)</a>
+                        </td>
+                        <td>
+                            <a href="https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2030-climate-energy-framework_en" class="initiative-link">Leader in renewables, but coal phase-out by 2030 requires faster implementation.</a>
+                        </td>
+                    </tr>
+
+                    <!-- Brazil Data Row -->
+                    <tr>
+                        <td><img src="images/br.svg" class="country-flag" alt="Brazil"> Brazil</td>
+                        <td>2.1</td>
+                        <td>45%</td>
+                        <td>
+                            <a href="https://www.amazonfund.gov.br/en/home/" class="initiative-link">Amazon Reforestation Program (2023–2030)</a>
+                        </td>
+                        <td>
+                            <a href="https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2020.00085/full" class="initiative-link">Reforestation boosts carbon sinks, but deforestation in non-protected areas remains a challenge.</a>
+                        </td>
+                    </tr>
+
+                    <!-- India Data Row -->
+                    <tr>
+                        <td><img src="images/in.svg" class="country-flag" alt="India"> India</td>
+                        <td>1.9</td>
+                        <td>28%</td>
+                        <td>
+                            <a href="https://mnre.gov.in/solar/schemes/" class="initiative-link">National Solar Mission (Phase IV)</a>
+                        </td>
+                        <td>
+                            <a href="https://www3.weforum.org/docs/WEF_Mission_2070_A_Green_New_Deal_for_a_Net_Zero_India_2021.pdf" class="initiative-link">Rapid renewable growth, but coal reliance persists; aligns with 2070 net-zero goal.</a>
+                        </td>
+                    </tr>
+
+                    <!-- China Data Row -->
+                    <tr>
+                        <td><img src="images/cn1.svg" class="country-flag" alt="China"> China</td>
+                        <td>7.6</td>
+                        <td>35%</td>
+                        <td>
+                            <a href="https://www.iea.org/countries/china" class="initiative-link">$450B Renewable Energy Investment (2021–2025)</a>
+                        </td>
+                        <td>
+                            <a href="https://unfccc.int/sites/default/files/NDC/2022-06/China%25E2%2580%2599s%2520Achievements%252C%2520New%2520Goals%2520and%2520New%2520Measures%2520for%2520Nationally%2520Determined%2520Contributions.pdf" class="initiative-link">Leads in solar/wind capacity, but high coal use delays peak emissions beyond 2025.</a>
+                        </td>
+                    </tr>
+
+                    <!-- South Africa Data Row -->
+                    <tr>
+                        <td><img src="images/za.svg" class="country-flag" alt="South Africa"> South Africa</td>
+                        <td>6.7</td>
+                        <td>12%</td>
+                        <td>
+                            <a href="https://www.climatecommission.org.za/south-africas-jet-ip" class="initiative-link">Just Energy Transition Partnership (JETP)</a>
+                        </td>
+                        <td>
+                            <a href="https://www.climate-transparency.org/wp-content/uploads/2020/11/South-Africa-CT-2020-Web.pdf" class="initiative-link">Phasing out coal plants by 2030; funding gaps hinder progress despite international support.</a>
+                        </td>
+                    </tr>
+
+                    <!-- Japan Data Row -->
+                    <tr>
+                        <td><img src="images/jp.svg" class="country-flag" alt="Japan"> Japan</td>
+                        <td>8.3</td>
+                        <td>24%</td>
+                        <td>
+                            <a href="https://grjapan.com/sites/default/files/content/articles/files/gr_japan_overview_of_gx_plans_january_2023.pdf" class="initiative-link">Green Transformation (GX) Strategy</a>
+                        </td>
+                        <td>
+                            <a href="https://www.oxfordenergy.org/wpcms/wp-content/uploads/2025/02/Insight-163-Japans-Energy-Transition.pdf" class="initiative-link">Boosting offshore wind and hydrogen, but LNG dependency slows decarbonization.</a>
+                        </td>
+                    </tr>
+
+                    <!-- UAE Data Row -->
+                    <tr>
+                        <td><img src="images/ae.svg" class="country-flag" alt="UAE"> UAE</td>
+                        <td>18.9</td>
+                        <td>10%</td>
+                        <td>
+                            <a href="https://www.asiahouse.org/files/documents/The-Middle-East-Pivot-2024.pdf" class="initiative-link">COP28 Commitments + $50B Solar Investment</a>
+                        </td>
+                        <td>
+                            <a href="https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/environment-and-energy/the-uae-net-zero-2050-strategy" class="initiative-link">Expanding renewables, but high per capita emissions and oil/gas reliance challenge net-zero by 2050 pledge.</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>Take action today for a greener tomorrow 🌱</p>
+                <div class="editor-links">
+                    <a href="../../WEB-CW/student-01/PageEditor/pageEditor_ST1.html">Page Editor: Student 1</a>
+                    <a href="../student-02/PageEditor/pageEditor_ST2.html">Page Editor: Student 2</a>
+                    <a href="../../WEB-CW/student-03/PageEditor/pageEditor_ST3.html">Page Editor: Student 3</a>
+                    <a href="../../WEB-CW/student-04/PageEditor/pageEditor_ST4.html">Page Editor: Student 4</a>
+                </div>
+                <div class="editor-links">
+                    <a href="../../student-04/SiteMap.html">Site Map</a>
+                </div>
+                <p>&copy; 2025 Climate Action. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Hub | Home</title>
+    <link rel="stylesheet" href="styleglobal.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <style>
+
+        /* Home Page Specific Styles */
+        .mission-section {
+            text-align: center;                                                             /* Center-align the text */
+            padding: 3rem 0;                                                                /* Padding at top and bottom */
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                        url('images/climate-bg.jpg');           /* Background transparent white gradient over an image */
+            background-size: cover;                             /* Make background cover the section */
+            margin-bottom: 2rem;                                /* Space below the section */
+        }
+
+         /* Heading style inside the mission section */
+        .mission-section h1 {
+            color: var(--primary-green);    /* Use the primary green color from CSS variables */
+            font-size: 2.5rem;
+            margin-bottom: 1rem;            /* Space below the heading */
+        }
+
+        .learn-more-section h2 {
+            color: var(--primary-green);  /* Green text color */
+            font-size: 2.5rem;
+            margin-bottom: 1rem;          /* Space below */
+            text-align: center;
+        }
+
+        /* Container for the content tiles */
+        .tile-container {
+            display: grid;                                                 /* Use CSS Grid for layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   /* Define responsive columns: min 250px, auto fit available space */
+            gap: 2rem;                                                     /* Space between grid items */
+            padding: 0 2rem;                                               /* Padding on the left and right */
+        }
+
+        /* Style for each content tile */
+        .content-tile {
+            background: white;
+            border-radius: 10px;                           /* Rounded corners */
+            padding: 1.5rem;                               /* Inner space */
+            transition: transform 0.3s, box-shadow 0.3s;   /* Smooth hover effect transitions */
+            text-align: center;                            /* Center the text inside */
+        }
+
+        /* Hover effect for content tiles */
+        .content-tile:hover {
+            transform: translateY(-5px);                /* Move tile up on hover */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);   /* Add a subtle shadow */
+        }
+
+        /* Style for the images inside the tiles */
+        .tile-image {
+            width: 100%;           /* Full width image */
+            height: 180px;         /* Fixed height */
+            object-fit: cover;     /* Cover the area without distortion */
+            border-radius: 8px;    /* Rounded corners on the image */
+            margin-bottom: 1rem;   /* Space below the image */
+        }
+
+        /* Style for the tile titles */
+        .tile-title {
+            color: var(--primary-blue);    /* Use the primary blue color from CSS variables */
+            margin-bottom: 0.5rem;         /* Space below the title */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Wrapper to center content -->
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>        
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Climate Action Logo" width="120">
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../student-02/home.html">Home</a></li>
+                    <li><a href="../../WEB-CW/student-01/volunteerPage/volunteer.html">Volunteer</a></li>
+                    <li><a href="../student-02/table.html">Climate Data</a></li>
+                    <li><a href="../../WEB-CW/student-04/profile.html">User Profile</a></li>
+                    <li><a href="../../WEB-CW/student-03/Feedback.html">Feedback</a></li>
+                    <li><a href="../../WEB-CW/student-03/Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="mission-section">
+                <h1>Climate Action Now</h1>
+                <p>Join our global movement to combat climate change and support UN Sustainable Development Goal 13.
+                    <br> 
+                   Together, we can create a sustainable future through education, innovation, and collective action.</p>
+            </section>
+
+            <section class="learn-more-section">
+                <h2>Learn More...</h2>
+            </section>
+
+            <!-- Container for content tiles -->
+            <div class="tile-container">
+
+                <!-- Content Tile 1 -->
+                <a href="../../WEB-CW/content pages/biodiversity-effects/content_ST1.html" class="content-tile">
+                    <img src="images/content1.jpg" 
+                         alt="Biodiversity Effects" 
+                         class="tile-image">
+                    <h3 class="tile-title">Biodiversity Effects</h3>
+                    <p>Climate change has long been predicted, but it's now undeniably a global problem, impacting everyone and everything...</p>
+                </a>
+
+                <!-- Content Tile 2 -->
+                <a href="../student-02/content pages/Combating-Climate-Chang/content_ST2.html" class="content-tile">
+                    <img src="images/content2.jpg" 
+                         alt="Combating Climate Change" 
+                         class="tile-image">
+                    <h3 class="tile-title">Combating Climate Change</h3>
+                    <p>Businesses have a more important role than ever in promoting environmental sustainability as the globe struggles with the far-reaching effects of climate change...</p>
+                </a>
+
+                <!-- Content Tile 3 -->
+                <a href="../../WEB-CW/content pages/RenewableEnergy/content_ST3.html" class="content-tile">
+                    <img src="images/content3.jpg" 
+                         alt="Renewable Energy" 
+                         class="tile-image">
+                    <h3 class="tile-title">Renewable Energy</h3>
+                    <p>Fossil fuels to renewable energy transition stands as a key element for stopping the progression of climate change...</p>
+                </a>
+
+                <!-- Content Tile 4 -->
+                <a href="../../WEB-CW/content pages/Science-Behind-Climate-Change/content_ST4.html" class="content-tile">
+                    <img src="images/content4.jpg" 
+                         alt="The Science Behind Climate Change: Causes and Effects" 
+                         class="tile-image">
+                    <h3 class="tile-title">The Science Behind Climate Change:
+                        <br>
+                        Causes and Effects</h3>
+                    <p>The occurrence of climate change features various elements that originate from natural forces and human-made activities...</p>
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>Take action today for a greener tomorrow 🌱</p>
+                <div class="editor-links">
+                    <a href="../../WEB-CW/student-01/PageEditor/pageEditor_ST1.html">Page Editor: Student 1</a>
+                    <a href="../student-02/PageEditor/pageEditor_ST2.html">Page Editor: Student 2</a>
+                    <a href="../../WEB-CW/student-03/PageEditor/pageEditor_ST3.html">Page Editor: Student 3</a>
+                    <a href="../../WEB-CW/student-04/PageEditor/pageEditor_ST4.html">Page Editor: Student 4</a>
+                </div>
+                <div class="editor-links">
+                    <a href="../../WEB-CW/student-04/sitemap.html">Site Map</a>
+                </div>
+                <p>&copy; 2025 Climate Action. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
