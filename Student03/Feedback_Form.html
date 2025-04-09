@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;    
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #e1e1e1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+        .note{
+            font-style: italic;
+            text-align: center;
+            font-size: 0.9em;
+            color: red;
+            margin-bottom: 10px;
+            }
+
+        .required {
+            color: red;
+            margin-left: 5px;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            }
+        input[type="text"],input[type="email"],input[type="tel"],select,textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            }
+
+        /* radio button */
+            input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* submit button */
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Highlights the button when hovered */
+        button[type="submit"]:hover {
+            background: #45a049;
+        }
+    
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size:2rem; /* 32 px */
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Highlight stars when hovered */
+        .rating label:hover,
+        .rating label:hover ~ label {
+            transform: scale(1.2);
+        }
+
+        /* Keep selected stars highlighted */
+        .rating input:checked ~ label {
+            color: gold;
+        }
+
+        
+        </style>
+    </head>
+    <body>
+    <div class="form-container">
+    <header>
+        <h1 style="color: #000000; text-align: center;">Feedback Form</h1>
+        <h2 class="note">Required fields <span class="required">*</span></h2>
+    </header>
+    <main>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <div><!--name-->
+            <label for="name">Enter your name:<span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here" required style="width: 50%"/>
+        </div>
+        <div><!--email-->
+            <label for="email">Enter your email:<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here" required style="width: 50%"/>
+        </div>
+        <div><!--telephone no.-->
+            <label for="tel-no.">Enter your Telephone Number:<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Ex. 0712345678" size="10" style="width: 150px;" required/>
+      </div>
+      <div><!--address-->
+            <label for="address">Enter your Address:<span class="required">*</span></label>
+            <input type="text" id="address" name="address" placeholder="Enter your address here" style="width: 50%" required/>
+      </div>
+    </fieldset>
+    <fieldset>
+        <legend>Feedback Details</legend>
+        <div><!--first time-radio buttons-->  
+            <label>Was this your first time visiting?<span class="required">*</span></label>
+              <br>
+              <input type="radio" id="FirstTimeYes" name="FirstTime" value="Yes" required/>
+              <label for="FirstTimeYes">Yes</label>
+
+              <input type="radio" id="FirstTimeNo" name="FirstTime" value="No" required/>
+              <label for="FirstTimeNo">No</label>
+        </div>
+        <div><!--navigate-radio buttons-->
+            <label>Was this website informative and easy to navigate through?<span class="required">*</span></label>
+            <br>
+            <input type="radio" id="EasyYes" name="Easy" value="Yes" required/>
+            <label for="EasyYes">Yes</label>
+
+            <input type="radio" id="EasyNo" name="Easy" value="No" required/>
+            <label for="EasyNo">No</label>
+        </div>
+        <div><!--improvements-->
+            <label for="note">If "No", suggest any improvements for the future: </label>
+            <br>
+            <textarea name="note" id="note" rows="2" cols="20">Add your message here... </textarea>
+        </div>
+        <div><!--Good Features-->
+            <label>Features You Like:<span class="required">*</span></label>
+            <input type="checkbox" id="design" name="features" value="design"> <label for="design">Design</label>
+            <input type="checkbox" id="usability" name="features" value="usability"> <label for="usability">Usability</label>
+            <input type="checkbox" id="performance" name="features" value="performance"> <label for="performance">Performance</label>
+            <input type="checkbox" id="performance" name="features" value="performance"> <label for="performance">Responsiveness</label>
+            <input type="checkbox" id="performance" name="features" value="performance"> <label for="performance">Content Quality</label>
+        </div>
+        <div><!--experience-Datalist-->
+            <label for="experience">Rate Your Experience:<span class="required">*</span></label>
+            <input list="ratings" id="experience" name="experience" placeholder="--Please select--" required>
+            <datalist id="ratings">
+                <option value="Excellent">
+                <option value="Good">
+                <option value="Average">
+                <option value="Poor">
+            </datalist>
+        </div>
+        <div><!--recommend-radio buttons-->
+            <label>Would you recommend our services?<span class="required">*</span></label>
+            <br>
+            <input type="radio" id="RecommendYes" name="Recommend" value="Yes" required/>
+            <label for="Yes">Yes</label>
+
+            <input type="radio" id="RecommendNo" name="Recommend" value="No" required/>
+            <label for="No">No</label>
+        </div>
+        <div><!--updates-Pop up list-->
+            <label for="updates">Would you like to receive updates about the website and any offers?<span class="required">*</span></label>
+            <select name="updates" id="updates">
+                <option value="Yes" style="text-align: center;">Yes - via Email</option>
+                <option value="No" style="text-align: center;">No</option>
+            </select>
+        </div>
+        <div><!--feedback date-->
+            <label for="feedback-date">Date of Feedback:<span class="required">*</span></label>
+            <input type="date" id="feedback-date" name="feedback-date" required>
+            
+            <label for="schedule-feedback">Preferred Follow-up Time:<span class="required">*</span></label>
+            <input type="datetime-local" id="schedule-feedback" name="schedule-feedback" required>
+        </div>
+        <div><!--requests-->
+            <label for="note">Do you have any additional questions or requests?</label>
+            <br>
+            <textarea name="note" id="note" rows="5" cols="20" required>Add your message here... </textarea>
+        </div>
+        <div><!--attachments-->
+            <label for="attachment">Upload an Attachment:</label>
+            <input type="file" id="attachment" name="attachment" accept="image/*, .pdf, .docx">
+        </div>
+
+    </fieldset>
+    <fieldset>
+    <legend>Rate Us</legend>
+    <div class="rating-container"><!--rating-->
+        <div>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required />
+                <label for="star5">&#9733;</label>
+        
+                <input type="radio" id="star4" name="rating" value="4" required />
+                <label for="star4">&#9733;</label>
+        
+                <input type="radio" id="star3" name="rating" value="3" required />
+                <label for="star3">&#9733;</label>
+        
+                <input type="radio" id="star2" name="rating" value="2" required />
+                <label for="star2">&#9733;</label>
+        
+                <input type="radio" id="star1" name="rating" value="1" required />
+                <label for="star1">&#9733;</label>
+            </div>
+        </div>
+    </div>
+    </fieldset>
+        <!--submit button-->
+        <button type="Submit">Submit</button>
+    </div>
+    </main>
+    </body>
+</html>
