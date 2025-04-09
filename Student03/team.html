@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Hub | Our Team</title>
+    <link rel="stylesheet" href="styleglobal.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        /* Team Page Specific Styles */
+        .team-page main {
+            padding: 2rem 1rem;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .member-info {
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.95);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .team-member:hover .member-info {
+            transform: translateY(0);
+        }
+
+        .member-info h3 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+
+        .member-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .member-info li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--neutral-dark);
+        }
+
+        .page-title {
+            text-align: center;
+            color: var(--primary-green);
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body class="team-page">
+    <div class="wrapper">
+        <header>        
+            <div class="logo">
+                <img src="images/logo.png" alt="Climate Action Logo" width="120">
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../student-02/home.html">Home</a></li>
+                    <li><a href="../student-01/volunteerPage/volunteer.html">Volunteer</a></li>
+                    <li><a href="../student-02/table.html">Climate Data</a></li>
+                    <li><a href="../student-04/profile.html">User Profile</a></li>
+                    <li><a href="../student-03/Feedback.html">Feedback</a></li>
+                    <li class="active"><a href="../student-03/Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Our Climate Action Team</h1>
+            
+            <div class="team-container">
+                <!-- Student 1 -->
+                <div class="team-member">
+                    <img src="images/Rakindu.jpeg" alt="Rakindu Niwunhella" class="member-image">
+                    <div class="member-info">
+                        <h3>Rakindu Niwunhella</h3>
+                        <p><strong>Role:</strong> Student 1</p>
+                        <p><strong>Contribution:</strong></p>
+                        <ul>
+                            <li>✓ Splash Screen</li>
+                            <li>✓ Volunteer Page</li>
+                            <li>✓ Content Page</li>
+                            <li>✓ Validation System</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Student 2 -->
+                <div class="team-member">
+                    <img src="images/Dulan.jpeg" alt="Dulan Nimnaka" class="member-image">
+                    <div class="member-info">
+                        <h3>Dulan Nimnaka</h3>
+                        <p><strong>Role:</strong> Student 2</p>
+                        <p><strong>Contribution:</strong></p>
+                        <ul>
+                            <li>✓ Home Page</li>
+                            <li>✓ Climate Data</li>
+                            <li>✓ Content Page</li>
+                            <li>✓ Template Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Student 3 -->
+                <div class="team-member">
+                    <img src="images/Pavithma.png" alt="Pavithma Fernando" class="member-image">
+                    <div class="member-info">
+                        <h3>Pavithma Fernando</h3>
+                        <p><strong>Role:</strong> Student 3</p>
+                        <p><strong>Contribution:</strong></p>
+                        <ul>
+                            <li>✓ Feedback System</li>
+                            <li>✓ Team Page</li>
+                            <li>✓ Content Page</li>
+                            <li>✓ UI Components</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Student 4 -->
+                <div class="team-member">
+                    <img src="images/Sithuli.png" alt="Sithuli Basnayake" class="member-image">
+                    <div class="member-info">
+                        <h3>Sithuli Basnayake</h3>
+                        <p><strong>Role:</strong> Student 4</p>
+                        <p><strong>Contribution:</strong></p>
+                        <ul>
+                            <li>✓ User Profiles</li>
+                            <li>✓ Site Mapping</li>
+                            <li>✓ Content Page</li>
+                            <li>✓ Accessibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Take action today for a greener tomorrow 🌱</p>
+                <div class="editor-links">
+                    <a href="../student-01/PageEditor/pageEditor_ST1.html">Page Editor: Student 1</a>
+                    <a href="../student-02/PageEditor/pageEditor_ST2.html">Page Editor: Student 2</a>
+                    <a href="../student-03/PageEditor/pageEditor_ST3.html">Page Editor: Student 3</a>
+                    <a href="../student-04/PageEditor/pageEditor_ST4.html">Page Editor: Student 4</a>
+                </div>
+                <div class="editor-links">
+                    <a href="../student-04/SiteMap.html">Site Map</a>
+                </div>
+                <p>&copy; 2025 Climate Action. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
