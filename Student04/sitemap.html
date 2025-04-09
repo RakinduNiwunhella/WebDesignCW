@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Hub | Site Map</title>
+    <link rel="stylesheet" href="styleglobal.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        .sitemap-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #94d3ad;
+        }
+
+        .hierarchy-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .student-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #e8f5e9;
+            border-radius: 8px;
+        }
+
+        .student-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+
+        .node:hover rect {
+            fill: #02501b; /* Example color change */
+            transform: scale(1.1); /* Slight scale-up effect without affecting layout */
+            z-index:1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow instead of scaling */
+
+        }
+
+        .student-list li {
+            padding: 1rem;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrapper to center content -->
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>        
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Climate Action Logo" width="120">
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../../student-02/images/home.html">Home</a></li>
+                    <li><a href="../../student-01/volunteerPage/volunteer.html">Volunteer</a></li>
+                    <li><a href="../../student-02/images/table.html">Climate Data</a></li>
+                    <li><a href="../student-04/profile.html">User Profile</a></li>
+                    <li><a href="../../student-03/Feedback.html">Feedback</a></li>
+                    <li><a href="../../student-03/Team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="sitemap-container">
+            <h1>Website Structure Map</h1>
+            
+            <!-- Visual Hierarchy -->
+            <div class="hierarchy-section">
+                <svg viewBox="0 0 1400 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Splash Screen Node -->
+                    <g class="node" transform="translate(650,20)">
+                        <a xlink:href="./../student-01/Splash Screen/splash.html">
+                            <rect x="-60" y="-15" width="120" height="30" rx="5" fill="#2E7D32"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Splash Screen</text>
+                        </a>
+                    </g>
+                    <!-- Home Node -->
+                    <g class="node" transform="translate(650,100)">
+                        <a xlink:href="./../student-02/home.html">
+                            <rect x="-40" y="-15" width="80" height="30" rx="5" fill="#2196F3"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Home</text>
+                        </a>
+                    </g>
+
+
+                    <!-- Content Page -->
+                    <g class="node" transform="translate(50,200)">
+                        <a xlink:href="../../student-01/volunteerPage/volunteer.html" >
+                            <rect x="-60" y="-15" width="120" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Content Page</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Volunteer Page-->
+                    <g class="node" transform="translate(250,200)">
+                        <a xlink:href="./../student-01/volunteerPage/volunteer.html" >
+                            <rect x="-60" y="-15" width="120" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Volunteer</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Climate Data-->
+                    <g class="node" transform="translate(450,200)">
+                        <a xlink:href="./../student-02/table.html" >
+                            <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Climate Data</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Profile-->
+                    <g class="node" transform="translate(650,200)">
+                        <a xlink:href="./../student-04/profile.html" >
+                            <rect x="-40" y="-15" width="80" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Profile</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Feedback-->
+                    <g class="node" transform="translate(850,200)">
+                        <a xlink:href="./../student-03/Feedback.html" >
+                            <rect x="-60" y="-15" width="120" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Feedback</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Team-->
+                    <g class="node" transform="translate(1050,200)">
+                        <a xlink:href="./../student-03/Team.html" >
+                            <rect x="-50" y="-15" width="110" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Team</text>
+                        </a>
+                    </g>
+                    
+                    <!-- Page Editor-->
+                    <g class="node" transform="translate(1250,200)">
+                        <a xlink:href="./../student-04/PageEditor/pageEditor_ST4.html" >
+                            <rect x="-80" y="-15" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy=".3em">Page Editor</text>
+                        </a>
+                    </g>
+
+                    <!-- Student 1-->
+                    <g class="node" transform="translate(1250,200)">
+                        <a href="./../content pages/biodiversity-effects/content_ST1.html">
+                            <rect x="-1150" y="45" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text x="-1070" y="65" fill="white" text-anchor="middle" dy=".3em">Student 1</text>
+                        </a>
+                    </g>
+
+                    <!-- Student 2-->
+                    <g class="node" transform="translate(1250,200)">
+                       <a href="./../content pages/Combating-Climate-Chang/content_ST2.html" >
+                            <rect x="-1150" y="95" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text x="-1070" y="115" fill="white" text-anchor="middle" dy=".3em">Student 2</text>
+                       </a>
+                    </g>
+
+                    <!-- Student 3-->
+                    <g class="node" transform="translate(1250,200)">
+                        <a href="./../content pages/RenewableEnergy/content_ST3.html" >
+                            <rect x="-1150" y="145" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text x="-1070" y="165" fill="white" text-anchor="middle" dy=".3em">Student 3</text>
+                        </a>
+                    </g>
+
+                    <!-- Student 4-->
+                    <g class="node" transform="translate(1250,200)">
+                        <a href="./../content pages/Science-Behind-Climate-Change/content_ST4.html" >
+                            <rect x="-1150" y="195" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text x="-1070" y="215" fill="white" text-anchor="middle" dy=".3em">Student 4</text>
+                        </a>
+                    </g>
+                    <!-- Feedback Form -->
+                    <g class="node" transform="translate(850,200)">
+                        <a xlink:href="../student-03/Feedback_Form.html">
+                            <rect x="-60" y="40" width="120" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy="55">Feedback Form</text>
+                        </a>
+                    </g>
+
+                    <!-- Validation Pages -->
+                    <g class="node" transform="translate(1250,200)">
+                        <a xlink:href="./../student-04/validationPage/validation_ST4.html">
+                            <rect x="-80" y="40" width="160" height="30" rx="5" fill="#4CAF50"/>
+                            <text fill="white" text-anchor="middle" dy="55">Validation Pages</text>
+                        </a>
+                    </g>
+
+
+                    
+
+                    <!-- Connection Lines -->
+                    <path d="M650,35 L650,90" stroke="#2E7D32" stroke-width="2"/>
+                    <path d="M650,115 L650,145" stroke="#2E7D32" stroke-width="2"/>
+                    <path d="M50,145 L1250,145" stroke="#2E7D32" stroke-width="2"/>
+                    <path d="M50,185 L50,145" stroke="#2E7D32" stroke-width="2"/><!--1-->
+                    <path d="M250,185 L250,145" stroke="#2E7D32" stroke-width="2"/><!--2-->
+                    <path d="M450,185 L450,145" stroke="#2E7D32" stroke-width="2"/><!--3-->
+                    <path d="M650,185 L650,145" stroke="#2E7D32" stroke-width="2"/><!--4-->
+                    <path d="M850,185 L850,145" stroke="#2E7D32" stroke-width="2"/><!--5-->
+                    <path d="M1050,185 L1050,145" stroke="#2E7D32" stroke-width="2"/><!--6-->
+                    <path d="M1250,185 L1250,145" stroke="#2E7D32" stroke-width="2"/><!--7-->
+
+                    <path d="M50,410 L50,215" stroke="#2E7D32" stroke-width="2"/><!--1.1-->
+
+                    <path d="M100,260 L50,260" stroke="#2E7D32" stroke-width="2"/><!--1.1.1-->
+                    <path d="M100,310 L50,310" stroke="#2E7D32" stroke-width="2"/><!--1.1.2-->
+                    <path d="M100,360 L50,360" stroke="#2E7D32" stroke-width="2"/><!--1.1.3-->
+                    <path d="M100,410 L50,410" stroke="#2E7D32" stroke-width="2"/><!--1.1.4-->
+
+                    <path d="M850,215 L850,245" stroke="#2E7D32" stroke-width="2"/><!--5.1-->
+
+                    <path d="M1250,215 L1250,245" stroke="#2E7D32" stroke-width="2"/><!--7.1-->
+                </svg>
+            </div>
+
+            <!-- Student Assignments -->
+            <div class="student-section">
+                <h2>Developed By</h2>
+                <ul class="student-list">
+                    <li>
+                        <h3>Student 01</h3>
+                        <ul>
+                            <li>Splash Screen</li>
+                            <li>Volunteer Page</li>
+                            <li>Content Page 1</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Student 02</h3>
+                        <ul>
+                            <li>Home Page</li>
+                            <li>Climate Data</li>
+                            <li>Content Page 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Student 03</h3>
+                        <ul>
+                            <li>Feedback</li>
+                            <li>Team Page</li>
+                            <li>Content Page 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Student 04</h3>
+                        <ul>
+                            <li>User Profile</li>
+                            <li>Site Map</li>
+                            <li>Content Page 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>Take action today for a greener tomorrow 🌱</p>
+                <div class="editor-links">
+                    <a href="../../student-01/PageEditor/pageEditor_ST0.html">Page Editor: Student 1</a>
+                    <a href="../../student-02/images/PageEditor/pageEditor_ST0.html">Page Editor: Student 2</a>
+                    <a href="../../student-03/PageEditor/pageEditor_ST0.html">Page Editor: Student 3</a>
+                    <a href="../student-04/PageEditor/pageEditor_ST4.html">Page Editor: Student 4</a>
+                </div>
+                <div class="editor-links">
+                    <a href="../student-04/sitemap.html">Site Map</a>
+                </div>
+                <p>&copy; 2025 Climate Action. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

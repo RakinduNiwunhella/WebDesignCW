@@ -1,0 +1,124 @@
+/* Global Styles for Climate Action Theme */
+
+/* CSS Variables */
+:root {
+    --primary-green: #2E7D32; /* Theme color 1 */
+    --primary-blue: #2196F3;  /* Theme color 2 */
+    --neutral-light: #F5F5F5; /* Background color */
+    --neutral-dark: #212121;  /* Text color */
+}
+
+/* Global Reset default margins/padding */
+* {
+    margin: 0;               /* Remove default margins */
+    padding: 0;              /* Remove default padding */
+    box-sizing: border-box;  /* Include padding in element width */
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;     /* Default font */
+    background-color: var(--neutral-light);  /* Light background */
+    color: var(--neutral-dark);              /* Dark text */
+    line-height: 1.6;                        /* Text spacing */
+}
+
+/* Wrapper to center content container */
+.wrapper {
+    max-width: 100%;    /* Max content width */
+    margin: 0 auto;     /* Center horizontally */
+    padding: 0;         /* Side padding */
+}
+
+/* Header Styles */
+header {
+    width: 100vw;                             /* Full viewport width */
+    background-color: white;                /* White header */
+    padding: 1rem 0;                          /* Vertical padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Drop shadow */
+    position: relative;
+}
+
+/* Logo alignment */
+.logo img {
+    display: block;     /* Remove inline spacing */
+    margin: 0 auto;     /* Center logo */
+}
+
+/* Navigation Bar */
+.nav-links {
+    display: flex;              /* Flexbox layout */
+    justify-content: center;    /* Center links */
+    list-style: none;           /* Remove bullet points */
+    margin-top: 1rem;           /* Spacing from logo */
+}
+
+.nav-links li {
+    margin: 0 15px;      /* Spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;          /* Remove underline */
+    color: var(--neutral-dark);     /* Link color */
+    font-weight: 500;               /* Medium bold */
+    transition: color 0.3s;         /* Hover animation */
+}
+
+.nav-links a:hover {
+    color: var(--primary-green);                    /* Hover color */
+    border-bottom: 2px solid var(--primary-green);  /* Underline effect */
+}
+
+/* Active Page Highlight */
+.nav-links .active a {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 0;      /* Vertical spacing */
+    min-height: 70vh;     /* Minimum height for footer placement */
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    width: 100vw;
+    background-color: var(--primary-green);   /* Green footer */
+    color: white;                           /* White text */
+    padding: 2rem 0;                          /* Vertical padding */
+    margin-top: auto;                         /* Push footer to bottom */
+    text-align: center;
+    z-index: 9999;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.editor-links {
+    margin: 1rem 0;
+}
+
+.editor-links a {
+    color: white;            /* Link color */
+    text-decoration: none;     /* Remove underline */
+    margin: 0 10px;            /* Horizontal spacing */
+    font-size: 0.9rem;
+}
+
+.editor-links a:hover {
+    text-decoration: underline;      /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;     /* Stack links vertically */
+        text-align: center;         /* Center align */
+    }
+
+    .nav-links li {
+        margin: 10px 0;     
+    }      /* Vertical spacing */
+}
